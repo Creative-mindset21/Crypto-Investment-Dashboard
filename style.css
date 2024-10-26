@@ -192,7 +192,7 @@ small {
 }
 
 .container {
-  width: 95vw;
+  width: 96vw;
   margin-inline: auto;
 }
 
@@ -233,19 +233,15 @@ header {
 }
 
 .search {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   width: 40rem;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   display: flex;
   align-items: center;
   gap: 10px;
   background-color: var(--color-light);
   color: var(--color-gray-light);
   border-radius: var(--radius-1);
-}
-
-.search i {
-  padding-top: 3px;
 }
 
 .search input[type="search"] {
@@ -281,4 +277,9 @@ header {
   height: 3rem;
   border-radius: var(--radius-3);
   object-position: top;
+}
+
+.menu-bars {
+  font-size: 1.3rem;
+  display: none;
 }
