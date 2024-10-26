@@ -59,7 +59,8 @@ body {
   background: var(--color-light);
   color: var(--color-gray-dark);
   display: grid;
-  grid-template-columns: 17rem auto 30rem;
+  grid-template-columns: 20rem auto 30rem;
+  gap: 2rem;
 }
 
 img {
@@ -85,12 +86,12 @@ h6 {
 
 h1 {
   font-size: 2.3rem;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 h3 {
@@ -282,4 +283,140 @@ header {
 .menu-bars {
   font-size: 1.3rem;
   display: none;
+}
+
+/* ? ===== SIDEBAR SECTION ===== */
+.sidebar {
+  margin-top: 5rem;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar a {
+  padding: 1.8rem 3.5vw 1.8rem 2vw;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--color-gray-dark);
+  background: transparent;
+  transition: var(--transition);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.sidebar a i {
+  font-size: 2.3rem;
+}
+
+.sidebar a h5 {
+  font-size: 1.1rem;
+}
+
+.sidebar a:hover {
+  background: var(--color-white);
+}
+
+.sidebar a.active {
+  background: var(--color-white);
+  border-left: 1rem solid var(--color-primary);
+  padding-left: calc(2vw - 1rem);
+}
+
+.sidebar a.active *,
+.sidebar a:hover * {
+  color: var(--color-primary);
+}
+
+/* ?===== MAIN SECTION ===== */
+.card-header {
+  margin-top: 6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-header input[type="date"] {
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+.card-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+.card {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#ff796f, #bd261b);
+  box-shadow: 0 2rem 3rem var(--color-danger-light);
+  border-radius: var(--radius-3);
+  padding: var(--card-padding);
+  transition: var(--transition);
+  justify-content: space-between;
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(#7f8191, #27282f);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(#697afd, #4f15b4);
+  box-shadow: 0 2rem 3rem var(--color-primary-light);
+}
+
+.card * {
+  color: white;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-header-left img {
+  width: 2rem;
+  padding: 0.3rem;
+  border: 1px solid white;
+  border-radius: var(--radius-1);
+}
+
+.card-header-right {
+  width: 3rem;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-chip {
+  width: 3.5rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer-right {
+  display: flex;
+  gap: 0.7rem;
 }
