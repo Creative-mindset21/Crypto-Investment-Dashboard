@@ -111,11 +111,11 @@ h6 {
 }
 
 p {
-  font-size: 0.86rem;
+  font-size: 1rem;
 }
 
 small {
-  font-size: 0.77rem;
+  font-size: 0.8rem;
 }
 
 .text-muted {
@@ -472,4 +472,46 @@ canvas {
   width: 100%;
   border-radius: var(--radius-3);
   padding: var(--card-padding);
+}
+
+/* ?===== INVESTMENTS SECTION ===== */
+
+.right {
+  margin-top: 6rem;
+  margin-right: 2vw;
+}
+.investments {
+  background: var(--color-white);
+  border-radius: var(--radius-3);
+}
+
+.investments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--card-padding);
+}
+
+.investments-header a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+}
+
+.investment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--card-padding);
+  border-bottom: 1px solid var(--color-light);
+}
+
+.investment img {
+  width: 5rem;
+}
+
+.investment:hover {
+  cursor: pointer;
+  background: var(--color-light);
 }
