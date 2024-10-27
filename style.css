@@ -328,7 +328,7 @@ header {
   color: var(--color-primary);
 }
 
-/* ?===== MAIN SECTION ===== */
+/* ?===== CARD SECTION ===== */
 .card-header {
   margin-top: 6rem;
   display: flex;
@@ -397,8 +397,8 @@ header {
   border-radius: var(--radius-1);
 }
 
-.card-header-right {
-  width: 3rem;
+.card-header-right img {
+  width: 5rem;
 }
 .card-body {
   display: flex;
@@ -419,4 +419,48 @@ header {
 .card-footer-right {
   display: flex;
   gap: 0.7rem;
+}
+
+/* ?===== FAST PAYMENT SECTION ===== */
+.fast-payment {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fast-payment-badges {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.fast-payment-badge {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  padding: 0.6rem var(--card-padding);
+  border-radius: var(--radius-1);
+  transition: var(--transition);
+}
+
+.fast-payment-badge:hover {
+  box-shadow: 0 0 1rem var(--color-primary-light);
+}
+
+.fast-payment-badge span {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.fast-payment-badge div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
