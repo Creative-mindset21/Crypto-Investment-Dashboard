@@ -61,6 +61,7 @@ body {
   display: grid;
   grid-template-columns: 20rem auto 30rem;
   gap: 2rem;
+  overflow-x: hidden;
 }
 
 img {
@@ -514,4 +515,65 @@ canvas {
 .investment:hover {
   cursor: pointer;
   background: var(--color-light);
+}
+
+/* ?===== RECENT TRANSACTIONS SECTION ===== */
+.recent-transactions {
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.recent-transactions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+.recent-transactions-header a {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--radius-3);
+  padding: 1rem var(--card-padding);
+  transition: var(--transition);
+}
+
+.transaction:hover {
+  background: var(--color-white);
+  cursor: pointer;
+}
+
+.icon {
+  width: 3.4rem;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-2);
+  font-size: 1.7rem;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-image {
+  width: 3.4rem;
+  height: 3rem;
+  border-radius: var(--radius-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
