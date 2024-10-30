@@ -1,0 +1,106 @@
+body {
+  grid-template-columns: 20rem auto;
+}
+
+.wallet-section {
+  margin-top: 8rem;
+  margin-right: 2vw;
+}
+
+.wallet-details {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+}
+
+.wallet-details > h4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.wallet-details > h1 {
+  font-size: 3.5rem;
+  margin: 0.5rem 0 1.5rem;
+  font-weight: 700;
+}
+
+.wallet-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.wallet-icon i {
+  color: var(--color-white);
+  background: var(--color-primary);
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.wallet-icon h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.wallet-tokens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 3rem;
+  margin-top: 2rem;
+}
+
+.token {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.token-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.token-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.token-text h4 {
+  font-size: 1.2rem;
+}
+
+.token-text div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.token-left img {
+  width: 3rem;
+}
+
+.token-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}

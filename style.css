@@ -593,6 +593,10 @@ canvas {
 }
 
 /* ? MEDIA QUERIES (TABLETS) */
+@media screen and (max-width: 1400px) {
+}
+
+/* ? MEDIA QUERIES (TABLETS) */
 @media screen and (max-width: 1024px) {
   /* *DEFAULT CSS */
   body {
