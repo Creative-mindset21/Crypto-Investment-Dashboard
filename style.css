@@ -587,6 +587,7 @@ canvas {
   body {
     grid-template-columns: 1fr;
     overflow-x: hidden;
+    position: relative;
   }
 
   .container {
@@ -603,8 +604,8 @@ canvas {
     display: inline-block;
     font-size: 2.5rem;
     position: absolute;
-    top: 2.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
   }
 
   .menu-bars {
@@ -619,17 +620,14 @@ canvas {
     left: -100%;
     z-index: 3;
     background: var(--color-white);
-    width: 35%;
+    width: 22rem;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
     height: 100%;
-    animation: showSidebar 400ms ease forwards;
-    display: none;
+    transition: var(--transition);
   }
 
-  @keyframes showSidebar {
-    to {
-      left: 0;
-    }
+  .sidebar.actives {
+    left: 0;
   }
 
   /* *MAIN SECTION */
@@ -658,10 +656,11 @@ canvas {
   }
 }
 
-/* ? MEDIA QUERIES (TABLETS) */
+/* ? MEDIA QUERIES (MOBILE PHONES) */
 @media screen and (max-width: 699px) {
-  header {
-    height: 5rem;
+  /* CUSTOM CSS */
+  body {
+    overflow-x: hidden;
   }
 
   h3 {
@@ -672,17 +671,49 @@ canvas {
     font-size: 1rem;
   }
 
+  /* HEADER SECTION */
+  header {
+    height: 5rem;
+  }
+
+  .nav-right {
+    gap: 30px;
+  }
+
   .nav-right h5,
   .nav-right span {
     display: none;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  /* MAIN CARD SECTION */
+  .card-header {
+    justify-content: space-between;
   }
 
   .card-main {
     grid-template-columns: 1fr;
   }
 
+  /* FAST PAYMENT SECTION */
   .fast-payment {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  /* SIDEBAR SECTION */
+
+  .sidebar a.active {
+    border-left: 0.5rem solid var(--color-primary);
+  }
+
+  .close-sidebar {
+    font-size: 2rem;
+
+    top: 1rem;
+    right: 1rem;
   }
 }

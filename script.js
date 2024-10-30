@@ -1,6 +1,13 @@
+const menuBtn = document.querySelector(".menu-bars");
+const sidebarEl = document.querySelector(".sidebar");
+const closeBtn = document.querySelector(".close-sidebar");
+
 const charts = document.querySelector("#charts").getContext("2d");
 const dateEl = document.querySelectorAll("#js-date");
 const timeEl = document.querySelectorAll("#js-time");
+
+menuBtn.addEventListener("click", () => sidebarEl.classList.toggle("actives"));
+closeBtn.addEventListener("click", () => menuBtn.click());
 
 // ! SET THE TIME TO BE FUNCTIONAL
 function startClock() {
