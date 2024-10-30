@@ -28,10 +28,11 @@ const month = today.toLocaleString("default", {
   month: "short",
 });
 const year = today.getFullYear();
+const period = date > 3 ? "th" : "";
 
 // ! CHANGE THE DATE TO CURRENT DATE
 dateEl.forEach((dates) => {
-  dates.innerHTML = `${date}, ${month}, ${year}`;
+  dates.innerHTML = `${date}${period}, ${month}, ${year}`;
 });
 
 // ! TRADING CHARTS

@@ -353,7 +353,7 @@ header {
   height: 20rem;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#ff796f, #bd261b);
+  background: linear-gradient(#dc2f02, #9d0208);
   box-shadow: 0 2rem 3rem var(--color-danger-light);
   border-radius: var(--radius-3);
   padding: var(--card-padding);
@@ -362,12 +362,12 @@ header {
 }
 
 .card:nth-child(2) {
-  background: linear-gradient(#7f8191, #27282f);
+  background: linear-gradient(#6c757d, #9a8c98);
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.12);
 }
 
 .card:nth-child(3) {
-  background: linear-gradient(#697afd, #4f15b4);
+  background: linear-gradient(#00b4d8, #7b2cbf);
   box-shadow: 0 2rem 3rem var(--color-primary-light);
 }
 
