@@ -659,4 +659,30 @@ canvas {
 }
 
 /* ? MEDIA QUERIES (TABLETS) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 699px) {
+  header {
+    height: 5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .nav-right h5,
+  .nav-right span {
+    display: none;
+  }
+
+  .card-main {
+    grid-template-columns: 1fr;
+  }
+
+  .fast-payment {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
