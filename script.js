@@ -1,11 +1,41 @@
+// ! HAMBURGER CONSTANTS
 const menuBtn = document.querySelector(".menu-bars");
 const sidebarEl = document.querySelector(".sidebar");
 const closeBtn = document.querySelector(".close-sidebar");
 
+// ! CHARTS CONSTANTS
 const charts = document.querySelector("#charts").getContext("2d");
 const dateEl = document.querySelectorAll("#js-date");
 const timeEl = document.querySelectorAll("#js-time");
 
+// !THEME MODE CONSTANTS
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  if (document.body.classList.contains("dark-theme")) {
+    themeBtn.innerHTML = `<i class='bx bx-sun' ></i>`;
+
+    localStorage.setItem("currentTheme", "dark-theme");
+  } else {
+    themeBtn.innerHTML = `<i class='bx bx-moon' ></i>`;
+    localStorage.setItem("currentTheme", "");
+  }
+});
+
+document.body.className = localStorage.getItem("currentTheme");
+
+if (document.body.classList.contains("dark-theme")) {
+  themeBtn.innerHTML = `<i class='bx bx-sun' ></i>`;
+
+  localStorage.setItem("currentTheme", "dark-theme");
+} else {
+  themeBtn.innerHTML = `<i class='bx bx-moon' ></i>`;
+  localStorage.setItem("currentTheme", "");
+}
+
+// ! HAMBURGER MENU FUNCTIONING
 menuBtn.addEventListener("click", () => sidebarEl.classList.toggle("actives"));
 closeBtn.addEventListener("click", () => menuBtn.click());
 
