@@ -1,14 +1,33 @@
 const charts = document.querySelector("#charts").getContext("2d");
 const dateEl = document.querySelectorAll("#js-date");
-const today = new Date();
+const timeEl = document.querySelectorAll("#js-time");
 
+// ! SET THE TIME TO BE FUNCTIONAL
+function startClock() {
+  function updateClock() {
+    const today = new Date();
+    const hours = (today.getHours() < 10 ? "0" : "") + today.getHours();
+    const minutes = (today.getMinutes() < 10 ? "0" : "") + today.getMinutes();
+    const seconds = (today.getSeconds() < 10 ? "0" : "") + today.getSeconds();
+    const period = hours > 12 ? "PM" : "AM";
+
+    timeEl.forEach((time) => {
+      time.innerHTML = `${hours} : ${minutes} : ${seconds} ${period}`;
+    });
+
+    setTimeout(updateClock, 1000);
+  }
+  updateClock();
+}
+
+startClock();
+
+const today = new Date();
 const date = today.getDate();
 const month = today.toLocaleString("default", {
   month: "short",
 });
 const year = today.getFullYear();
-
-console.log(year);
 
 // ! CHANGE THE DATE TO CURRENT DATE
 dateEl.forEach((dates) => {
