@@ -38,7 +38,7 @@ body {
 }
 
 .wallet-icon i {
-  color: var(--color-white);
+  color: var(--color-dark);
   background: var(--color-primary);
   width: 4.5rem;
   height: 4.5rem;
