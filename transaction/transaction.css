@@ -1,0 +1,50 @@
+/* GENERAL CSS */
+body {
+  grid-template-columns: 20rem auto;
+  overflow-x: hidden;
+  color: var(--color-dark);
+}
+
+/* TABLE SECTION */
+.transactions-table {
+  margin-top: 6rem;
+  height: fit-content;
+  margin-right: 2vw;
+}
+
+.transactions-table th {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.transactions-table td {
+  padding: 1rem;
+}
+
+.transactions-table tbody tr:nth-child(odd) {
+  background: var(--color-white);
+}
+
+/* ? MEDIA QUERIES (TABLETS) */
+@media screen and (max-width: 1024px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .transactions-table {
+    margin-right: 0;
+  }
+}
+
+/* ? MEDIA QUERIES (MOBILE PHONES) */
+@media screen and (max-width: 699px) {
+  .transactions-table thead tr,
+  .transactions-table tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transactions-table tbody tr:nth-child(even) {
+    border-left: 2px solid var(--color-white);
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ! ===== CUSTOM META TAGS ===== -->
+    <meta name="author" content="Creative Mindset" />
+    <meta
+      name="description"
+      content="A Responsive Multi Page Crypto Dashboard"
+    />
+    <meta name="title" content="Responsive Multi Page Crypto Dashboard" />
+
+    <!-- ! ===== GENERAL CUSTOM CSS LINKING ===== -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- ! ===== TRANSACTION CSS LINKING ===== -->
+    <link rel="stylesheet" href="transaction.css" />
+
+    <!-- ! ===== BOXICONS LINKING -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Responsive Multi Page Crypto Dashboard</title>
+  </head>
+  <body>
+    <!-- ! ===== NAVBAR SECTION -->
+    <header>
+      <div class="container nav-container">
+        <a href="./index.html" class="logo">
+          <img src="../images/logo.png" alt="logo" class="logo-img" />
+          <span>CineMind</span>
+        </a>
+
+        <div class="search">
+          <i class="bx bx-search-alt"></i>
+
+          <input type="search" placeholder="Search..." />
+        </div>
+
+        <div class="nav-right">
+          <button class="theme-btn">
+            <i class="bx bx-moon"></i>
+          </button>
+
+          <div class="profile">
+            <img
+              src="../images/user-image.jpg"
+              alt="User Profile image"
+              class="profile-img"
+            />
+            <h5>Creative Mindset</h5>
+            <span class="dropdown-btn">
+              <i class="bx bx-chevron-down"></i>
+            </span>
+
+            <div class="menu-bars">
+              <i class="bx bx-menu"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ? ===== SIDEBAR SECTION ===== -->
+    <section class="sidebar">
+      <a href="../index.html">
+        <i class="bx bxs-dashboard"></i>
+        <h5>Dashboard</h5>
+      </a>
+
+      <a href="">
+        <i class="bx bx-exclude"></i>
+        <h5>Exchange</h5>
+      </a>
+
+      <a href="./wallet/wallet.html">
+        <i class="bx bx-wallet"></i>
+        <h5>Wallet</h5>
+      </a>
+
+      <a href="transaction.html" class="active">
+        <i class="bx bx-transfer"></i>
+        <h5>Transactions</h5>
+      </a>
+
+      <a href="">
+        <i class="bx bx-analyse"></i>
+        <h5>Analytics</h5>
+      </a>
+
+      <a href="">
+        <i class="bx bx-envelope"></i>
+        <h5>Messages</h5>
+      </a>
+
+      <a href="">
+        <i class="bx bx-help-circle"></i>
+        <h5>Help Center</h5>
+      </a>
+
+      <a href="">
+        <i class="bx bx-cog"></i>
+        <h5>Settings</h5>
+      </a>
+
+      <button class="close-sidebar">
+        <i class="bx bx-x"></i>
+      </button>
+    </section>
+
+    <table class="transactions-table">
+      <thead>
+        <tr>
+          <th>Transactions ID</th>
+          <th>Date</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Coin</th>
+          <th>Amount</th>
+          <th>Note</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="danger">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="danger">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="danger">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="danger">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="danger">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="success">Completed</td>
+        </tr>
+
+        <tr>
+          <td>#2348576252</td>
+          <td id="js-date"></td>
+          <td>Creative</td>
+          <td>Mindset</td>
+          <td>Bitcoin</td>
+          <td>0.56</td>
+          <td>Part Payment for car</td>
+          <td class="danger">Completed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ! ===== CUSTOM JS LINKING -->
+    <script src="../script.js"></script>
+  </body>
+</html>

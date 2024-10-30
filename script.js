@@ -3,14 +3,13 @@ const menuBtn = document.querySelector(".menu-bars");
 const sidebarEl = document.querySelector(".sidebar");
 const closeBtn = document.querySelector(".close-sidebar");
 
-// ! CHARTS CONSTANTS
-const charts = document.querySelector("#charts").getContext("2d");
 const dateEl = document.querySelectorAll("#js-date");
 const timeEl = document.querySelectorAll("#js-time");
 
 // !THEME MODE CONSTANTS
 const themeBtn = document.querySelector(".theme-btn");
 
+// ! THEME MODE FUNCTIONING
 themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
 
@@ -73,6 +72,9 @@ dateEl.forEach((dates) => {
 });
 
 // ! TRADING CHARTS
+
+// ! CHARTS CONSTANTS
+const charts = document.querySelector("#charts").getContext("2d");
 new Chart(charts, {
   type: "line",
   data: {

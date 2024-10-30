@@ -51,6 +51,7 @@
   box-sizing: border-box;
   background: transparent;
   appearance: none;
+  scroll-behavior: smooth;
 }
 
 /* ? ===== DEFAULT CSS ===== */
@@ -601,7 +602,7 @@ canvas {
   }
 
   .container {
-    width: 90vw;
+    width: 95vw;
     padding: 0 1rem;
   }
 
@@ -616,6 +617,7 @@ canvas {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    color: var(--color-dark);
   }
 
   .menu-bars {
