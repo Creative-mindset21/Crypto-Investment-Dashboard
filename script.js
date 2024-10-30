@@ -1,5 +1,21 @@
 const charts = document.querySelector("#charts").getContext("2d");
+const dateEl = document.querySelectorAll("#js-date");
+const today = new Date();
 
+const date = today.getDate();
+const month = today.toLocaleString("default", {
+  month: "short",
+});
+const year = today.getFullYear();
+
+console.log(year);
+
+// ! CHANGE THE DATE TO CURRENT DATE
+dateEl.forEach((dates) => {
+  dates.innerHTML = `${date}, ${month}, ${year}`;
+});
+
+// ! TRADING CHARTS
 new Chart(charts, {
   type: "line",
   data: {
