@@ -9,9 +9,9 @@
   --color-gray-light: #86848c;
   --color-gray-dark: #56555e;
   --color-dark: #27282f;
-  --color-primary: rgb(71, 7, 234);
-  --color-success: rgb(34, 202, 75);
-  --color-danger: rgb(255, 67, 54);
+  --color-primary: #00b4d8;
+  --color-success: #008000;
+  --color-danger: #d00000;
   --color-warning: rgb(234, 181, 7);
   --color-purple: rgb(160, 99, 245);
   --color-primary-light: rgba(71, 7, 234, 0.2);
